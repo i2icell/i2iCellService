@@ -182,11 +182,6 @@ public class Services {
 	public Integer[] getBalances(String inputPhoneNumber) {
 		Integer[] remainResults = new Integer[3];
 		
-		if( !firstNameVerification(inputPhoneNumber)) {
-			return remainResults;
-		}
-		
-		
 		Connection connectionDB = null;
 		CallableStatement csProcedureObject = null;
 		try {
@@ -228,7 +223,8 @@ public class Services {
 	public int changePassword(String inputPhoneNumber, Double inputTcNumber,
 							  String inputNewPassword ) {
 		
-		if( !firstNameVerification(inputPhoneNumber) || !phoneNumberVerification(inputNewPassword) ) {
+		if( !phoneNumberVerification(inputPhoneNumber) || !TcNumberVerification(inputNewPassword) 
+				|| passwordVerification(inputNewPassword)) {
 			return 0;
 		}
 		
