@@ -223,7 +223,7 @@ public class Services {
 	public int changePassword(String inputPhoneNumber, Double inputTcNumber,
 							  String inputNewPassword ) {
 		
-		if( !phoneNumberVerification(inputPhoneNumber) || passwordVerification(inputNewPassword)) {
+		if( !phoneNumberVerification(inputPhoneNumber) || !passwordVerification(inputNewPassword)) {
 			return 0;
 		}
 		
