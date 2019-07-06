@@ -131,7 +131,8 @@ public class Services {
 		}
 		
 		
-		/* TC Numarası DB de Hala Number tipinde olduğundan dolayı şuan eklenmedi ve tipi değiştirilmedi. 
+		/* TC Numarasi DB de Hala Number tipinde olduÃ°undan dolayi suan eklenmedi ve tipi degistirilmedi. 
+		   Daha sonra tipi deÄŸiÅŸtirilip verification eklenecek.
 		    if( !TcNumberVerification(inputTcNumber) ) {
 			return 0;
 		}
