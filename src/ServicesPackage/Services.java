@@ -42,7 +42,8 @@ public class Services {
 			return FALSE;
 		}
 		int result;
-		User user = new User(inputFirstName, inputLastName, inputPhoneNumber, inputEmail, inputPassword, inputBirthDate, inputTcNumber);
+		User user = new User(inputFirstName, inputLastName, inputPhoneNumber, inputEmail, 
+				     inputPassword, inputBirthDate, inputTcNumber);
 		result = getServicesDao().saveUser(user);
 
 		return result;
